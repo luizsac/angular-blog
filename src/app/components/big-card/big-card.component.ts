@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-big-card',
@@ -7,7 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BigCardComponent implements OnInit {
 
-  constructor() { }
+    @Input()
+    cardImg: string;
+    @Input()
+    cardTitle: string;
+    @Input()
+    cardDescription: string;
+
+    constructor() {
+        this.cardImg = "";
+        this.cardTitle = "";
+        this.cardDescription = "";
+    }
 
   ngOnInit(): void {
   }

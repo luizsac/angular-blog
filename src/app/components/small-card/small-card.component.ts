@@ -9,11 +9,14 @@ import { Component, Input, OnInit } from '@angular/core';
 export class SmallCardComponent implements OnInit {
 
     @Input()
+    id: string;
+    @Input()
     cardImg: string;
     @Input()
     cardTitle: string;
 
   constructor() {
+    this.id = "0";
     this.cardImg = "";
     this.cardTitle = "";
   }

@@ -14,7 +14,7 @@
     height: 100%;
 }
 
-.small-card__img > img {
+.small-card__img > a > img {
     width: 100%;
     height: 100%;
     object-fit: cover;
